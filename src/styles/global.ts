@@ -7,8 +7,7 @@ const GlobalStyles = createGlobalStyle`
   font-style: normal;
   font-weight: 300;
   src: local(''),
-       url('/fonts/heebo-v20-latin-300.woff2') format('woff2'),
-       url('/fonts/heebo-v20-latin-300.woff') format('woff');
+       url('/fonts/heebo-v20-latin-300.woff2') format('woff2');
 }
 
 @font-face {
@@ -16,8 +15,7 @@ const GlobalStyles = createGlobalStyle`
   font-style: normal;
   font-weight: 400;
   src: local(''),
-       url('/fonts/heebo-v20-latin-regular.woff2') format('woff2'),
-       url('/fonts/heebo-v20-latin-regular.woff') format('woff');
+       url('/fonts/heebo-v20-latin-regular.woff2') format('woff2');
 }
 
 @font-face {
@@ -25,9 +23,17 @@ const GlobalStyles = createGlobalStyle`
   font-style: normal;
   font-weight: 500;
   src: local(''),
-       url('/fonts/heebo-v20-latin-500.woff2') format('woff2'),
-       url('/fonts/heebo-v20-latin-500.woff') format('woff');
+       url('/fonts/heebo-v20-latin-500.woff2') format('woff2');
 }
+
+@font-face {
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+       url('/fonts/heebo-v20-latin-700.woff2') format('woff2');
+}
+
 
 
 
