@@ -15,4 +15,14 @@ const Template: ComponentStory<typeof LoginInput> = (args) => (
 
 // const Template: ComponentStory<typeof LoginInput> = () => <LoginInput />
 
-export const Default = Template.bind({})
+export const Email = Template.bind({})
+Email.args = {
+  inputName: 'Email',
+  hasButton: false,
+}
+
+export const Password = Template.bind({})
+Password.args = {
+  inputName: 'Senha',
+  hasButton: true,
+}
