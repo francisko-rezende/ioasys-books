@@ -1,58 +1,58 @@
+Sobre
 
-![React Avançado](https://raw.githubusercontent.com/React-Avancado/boilerplate/master/public/img/logo-gh.svg)
+Estes documento README tem como objetivo fornecer as informações necessárias para realização do projeto ioasys books.
+🏗 O que fazer?
 
-This is a [Next.js](https://nextjs.org/) boilerplate to be used in a course called [React Avançado](https://reactavancado.com.br/).
-![ci](https://github.com/React-Avancado/boilerplate/workflows/ci/badge.svg)
-## What is inside?
+    Você deve criar seu projeto e subir em um repositório e ao finalizar, enviar o link do seu repositório para a nossa equipe. Lembre-se, NÃO é necessário criar um Pull Request para isso, nós iremos avaliar e retornar por email o resultado do seu teste.
 
-This project uses lot of stuff as:
+🚨 Requisitos
 
-- [TypeScript](https://www.typescriptlang.org/)
-- [NextJS](https://nextjs.org/)
-- [Styled Components](https://styled-components.com/)
-- [Jest](https://jestjs.io/)
-- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro)
-- [Storybook](https://storybook.js.org/)
-- [Eslint](https://eslint.org/)
-- [Prettier](https://prettier.io/)
-- [Husky](https://github.com/typicode/husky)
+    Seu projeto deverá ser construído utilizando ReactJS ou Angular.
+    Seu projeto deverá ser construído utilizando o layout disponibilizado na descrição do teste.
+    A integração com a API deve ser feita respeitando todos os contratos de OAuth.
 
-## Getting Started
+🕵🏻‍♂️ Itens a serem avaliados
 
-First, run the development server:
+    Estrutura do Projeto
+    Boas práticas da Linguagem/Framework
+    Integração com API
+    Bibliotecas utilizadas
+    Estilização dos componentes
+    Persistência de login
+    Layout responsivo
+    Friendly URL
+    Seu projeto deverá seguir tudo o que foi exigido na seção O que desenvolver?
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+🎁 Extra
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Esses itens não obrigatórios, porém desejados.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+    Testes unitários
+    SEO
+    Linter
+    Code Formater
+    Documentação de componente
 
-## Commands
+🖥 O que desenvolver?
 
-- `dev`: runs your application on `localhost:3000`
-- `build`: creates the production build version
-- `start`: starts a simple server with the build production code
-- `lint`: runs the linter in all components and pages
-- `test`: runs jest to test all components and pages
-- `test:watch`: runs jest in watch mode
-- `storybook`: runs storybook on `localhost:6006`
-- `build-storybook`: create the build version of storybook
+Você deverá construir um projeto utilizando o layout proposto
 
-## Learn More
+    Login e acesso de Usuário já registrado
+    Para ter acesso as demais APIs precisamos enviar o authorization no header para autorizar a requisição;
+    Listagem de Livros
+    Detalhamento do Livro
 
-To learn more about Next.js, take a look at the following resources:
+🔗 Links e Informações Importantes
+Layout
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+    Layout e recortes disponíveis no Figma
+    https://www.figma.com/file/YXuqJUzNZcR7GveJfVWCKo/Desafio-Frontend-ioasys-books
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Integração com API
 
-## Deploy on Vercel
+    A documentação da API está disponível a partir de uma página web (https://books.ioasys.com.br/api/docs/).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+    Documentação: https://books.ioasys.com.br/api/docs/
+    Servidor: https://books.ioasys.com.br/api/v1
+    Usuário de Teste: desafio@ioasys.com.br
+    Senha de Teste: 12341234
