@@ -1,5 +1,20 @@
-import Main from 'components/Main'
+import React from 'react'
 
-export default function Home() {
-  return <Main />
+import Logo from 'components/Logo'
+import Link from 'next/link'
+
+const index = () => {
+  return (
+    <div>
+      <h1>
+        <Logo /> Books
+      </h1>
+
+      <Link href="/home">
+        <a>Home</a>
+      </Link>
+    </div>
+  )
 }
+
+export default index
