@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle, css } from 'styled-components'
 
 const GlobalStyles = createGlobalStyle`
 
@@ -34,29 +34,23 @@ const GlobalStyles = createGlobalStyle`
        url('/fonts/heebo-v20-latin-700.woff2') format('woff2');
 }
 
-
-
-
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-
   }
 
-  html {
-    font-size: 62.5%;
-  }
+  ${({ theme }) => css`
+    html {
+      font-size: 62.5%;
+    }
 
-  html, body, #__next {
-    height: 100%;
-  }
-
-  body {
-    font-family:'Heebo', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
+    body {
+      font-family: ${theme.fontFamily};
+    }
+  `}
 `
 
 export default GlobalStyles
