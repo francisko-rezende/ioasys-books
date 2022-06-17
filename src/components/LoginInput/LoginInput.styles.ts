@@ -17,14 +17,13 @@ export const LabelWrapper = styled.div`
 
 export const Label = styled.label`
   color: hsla(0, 0%, 100%, 0.5);
-  background-color: red;
 `
 
 export const Input = styled.input`
   background: none;
-  background-color: blue;
   border: none;
   color: ${({ theme }) => theme.colors.white};
+  font-size: 1.6rem;
 
   &:focus {
     outline: none;
