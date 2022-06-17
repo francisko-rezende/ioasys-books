@@ -14,6 +14,8 @@ const Logo = ({ color = 'white' }: LogoProps) => {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 105 36"
+          role="img"
+          aria-label="ioasys"
         >
           <path
             fillRule="evenodd"
