@@ -76,17 +76,17 @@ const buttonVariants = {
     `,
   },
   sizes: {
-    tiny: () => css`
+    tiny: css`
       padding: 8px 10px;
     `,
-    small: () => css`
+    small: css`
       padding: 10px 12px;
     `,
-    basic: () => css`
+    basic: css`
       padding: 12px 14px;
       font-size: 14px;
     `,
-    large: () => css`
+    large: css`
       padding: 17px 20px;
       font-size: 14px;
     `,
@@ -110,7 +110,7 @@ export const Button = styled.button<ButtonsProps>`
   }
 
   ${({ size, buttonType, theme }) => css`
-    ${!!size && buttonVariants.sizes[size]()}
+    ${!!size && buttonVariants.sizes[size]}
     ${!!buttonType && buttonVariants.colors[buttonType](theme)}
   `}
 `
