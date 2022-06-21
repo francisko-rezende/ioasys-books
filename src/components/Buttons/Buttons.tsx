@@ -1,13 +1,20 @@
-import React from 'react'
+import React, { ReactNode } from 'react'
 
 import * as S from './Buttons.styles'
 
-export type ButtonsProps = {
+interface ButtonsProps extends React.ComponentProps<'button'> {
   buttonType: 'secondary' | 'success' | 'warning' | 'alert' | 'primary'
   size: 'tiny' | 'small' | 'basic' | 'large'
-  children: string
   disabled: boolean
+  children: ReactNode // ReactNode não funciona aqui
 }
+
+// export type ButtonsProps = {
+//   buttonType: 'secondary' | 'success' | 'warning' | 'alert' | 'primary'
+//   size: 'tiny' | 'small' | 'basic' | 'large'
+//   children: string
+//   disabled: boolean
+// } & HTMLButtonElement
 
 const Buttons = ({
   buttonType = 'secondary',
