@@ -1,7 +1,7 @@
 import React from 'react'
 
 import LoginInput from 'components/LoginInput'
-// import { useRouter } from 'next/router'
+import { useRouter } from 'next/router'
 import api from 'services/api'
 
 import * as S from './LoginForm.styles'
@@ -10,7 +10,7 @@ const LoginForm = () => {
   const [email, setEmail] = React.useState('desafio@ioasys.com.br')
   const [password, setPassword] = React.useState('12341234')
 
-  // const router = useRouter()
+  const router = useRouter()
 
   return (
     <S.Form
@@ -27,17 +27,18 @@ const LoginForm = () => {
           headers: { authorization },
         } = await api.post('/auth/sign-in', loginData)
 
-        console.log({ data, authorization })
+        // console.log({ data, authorization })
 
         if (authorization) {
-          // router.push('/home')
           api.defaults.headers.common[
             'Authorization'
           ] = `Bearer ${authorization}`
+          localStorage.setItem('user', JSON.stringify(data))
+          router.push('/home')
         }
-        const books = await api.get('/books?page=1&amount=10')
+        // const books = await api.get('/books?page=1&amount=10')
 
-        console.log(books)
+        // console.log(books)
       }}
     >
       <LoginInput
