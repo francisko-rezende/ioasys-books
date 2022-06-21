@@ -1,6 +1,10 @@
 import styled, { css, DefaultTheme } from 'styled-components'
 
-import { ButtonsProps } from './Buttons'
+interface StyledButtonProps {
+  buttonType: 'secondary' | 'success' | 'warning' | 'alert' | 'primary'
+  size: 'tiny' | 'small' | 'basic' | 'large'
+  disabled: boolean
+}
 
 const buttonVariants = {
   colors: {
@@ -93,7 +97,7 @@ const buttonVariants = {
   },
 }
 
-export const Button = styled.button<ButtonsProps>`
+export const Button = styled.button<StyledButtonProps>`
   font-size: 9px;
   background: transparent;
   text-transform: uppercase;
