@@ -5,11 +5,11 @@ import { ButtonsProps } from './Buttons'
 const buttonVariants = {
   colors: {
     secondary: (theme: DefaultTheme) => css`
-      border: 1px solid ${theme.colors.secondary};
+      border-color: ${theme.colors.secondary};
       color: ${theme.colors.secondary};
 
       &:hover {
-        border: 1px solid ${theme.colors.secondaryDark};
+        border-color: ${theme.colors.secondaryDark};
         color: ${theme.colors.secondaryDark};
       }
 
@@ -19,63 +19,59 @@ const buttonVariants = {
       }
     `,
     success: (theme: DefaultTheme) => css`
-      border: 1px solid ${theme.colors.success};
+      border-color: ${theme.colors.success};
       color: ${theme.colors.success};
 
       &:hover {
-        border: 1px solid ${theme.colors.secondaryDark};
-        color: ${theme.colors.secondaryDark};
+        border-color: ${theme.colors.successDark};
+        color: ${theme.colors.successDark};
       }
 
       &:disabled {
         background: ${theme.colors.success};
         color: ${theme.colors.black};
-        opacity: 0.4;
       }
     `,
     warning: (theme: DefaultTheme) => css`
-      border: 1px solid ${theme.colors.warning};
+      border-color: ${theme.colors.warning};
       color: ${theme.colors.warning};
 
       &:hover {
-        border: 1px solid ${theme.colors.warningDark};
+        border-color: ${theme.colors.warningDark};
         color: ${theme.colors.warningDark};
       }
 
       &:disabled {
         background: ${theme.colors.warning};
         color: ${theme.colors.black};
-        opacity: 0.4;
       }
     `,
     alert: (theme: DefaultTheme) => css`
-      border: 1px solid ${theme.colors.alert};
+      border-color: ${theme.colors.alert};
       color: ${theme.colors.alert};
 
       &:hover {
-        border: 1px solid ${theme.colors.alertDark};
+        border-color: ${theme.colors.alertDark};
         color: ${theme.colors.alertDark};
       }
 
       &:disabled {
         background: ${theme.colors.alert};
         color: ${theme.colors.white};
-        opacity: 0.4;
       }
     `,
     primary: (theme: DefaultTheme) => css`
-      border: 1px solid ${theme.colors.primary};
+      border-color: ${theme.colors.primary};
       color: ${theme.colors.primary};
 
       &:hover {
-        border: 1px solid ${theme.colors.primaryDark};
+        border-color: ${theme.colors.primaryDark};
         color: ${theme.colors.primaryDark};
       }
 
       &:disabled {
         background: ${theme.colors.primary};
         color: ${theme.colors.white};
-        opacity: 0.4;
       }
     `,
   },
@@ -101,6 +97,8 @@ export const Button = styled.button<ButtonsProps>`
   font-size: 9px;
   background: transparent;
   text-transform: uppercase;
+  border-width: 1px;
+  border-style: solid;
 
   &:hover {
     cursor: pointer;
@@ -108,6 +106,7 @@ export const Button = styled.button<ButtonsProps>`
 
   &:disabled {
     cursor: not-allowed;
+    opacity: 0.4;
   }
 
   ${({ size, buttonType, theme }) => css`
