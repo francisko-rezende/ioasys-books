@@ -29,14 +29,13 @@ const LoginForm = () => {
 
         console.log({ data, authorization })
 
-        // if (authorization) {
-        //   router.push('/home')
-        // }
-        const books = await api.get('/books?page=1&amount=10', {
-          headers: {
-            authorization: `Bearer ${authorization}`,
-          },
-        })
+        if (authorization) {
+          // router.push('/home')
+          api.defaults.headers.common[
+            'Authorization'
+          ] = `Bearer ${authorization}`
+        }
+        const books = await api.get('/books?page=1&amount=10')
 
         console.log(books)
       }}
