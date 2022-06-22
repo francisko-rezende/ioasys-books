@@ -1,12 +1,11 @@
-import React, { ReactNode } from 'react'
+import React from 'react'
 
 import * as S from './Buttons.styles'
 
-interface ButtonsProps extends React.ComponentProps<'button'> {
+interface ButtonsProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   buttonType: 'secondary' | 'success' | 'warning' | 'alert' | 'primary'
   size: 'tiny' | 'small' | 'basic' | 'large'
   disabled: boolean
-  children: ReactNode // ReactNode não funciona aqui OU talvez funcione?
 }
 
 // export type ButtonsProps = {
@@ -14,16 +13,17 @@ interface ButtonsProps extends React.ComponentProps<'button'> {
 //   size: 'tiny' | 'small' | 'basic' | 'large'
 //   children: string
 //   disabled: boolean
-// } & HTMLButtonElement
+// } & HTMLButtonElement // olhar intersect para extender
 
 const Buttons = ({
   buttonType = 'secondary',
   size,
-  children = 'Button',
+  children,
   disabled,
+  ...rest // passar sempre que o componente puder receber mais props
 }: ButtonsProps) => {
   return (
-    <S.Button size={size} buttonType={buttonType} disabled={disabled}>
+    <S.Button size={size} buttonType={buttonType} disabled={disabled} {...rest}>
       {children}
     </S.Button>
   )

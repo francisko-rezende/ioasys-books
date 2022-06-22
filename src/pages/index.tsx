@@ -1,5 +1,6 @@
 import React from 'react'
 
+import Buttons from 'components/Buttons'
 import Link from 'next/link'
 
 interface childrenTestProps {
@@ -44,6 +45,12 @@ const index = () => {
   //     userId: 5,
   //   },
   // ]
+  console.log(
+    <Buttons disabled={false} size={'large'} buttonType="secondary">
+      Wololo
+    </Buttons>
+  )
+
   return (
     <>
       <h1>Ioasys Books</h1>
