@@ -5,7 +5,7 @@ import { ComponentMeta, ComponentStory } from '@storybook/react'
 import Buttons from '.'
 
 export default {
-  title: 'Buttons',
+  title: 'Level 1/Level 2/Level 3/Buttons',
   component: Buttons,
 } as ComponentMeta<typeof Buttons>
 
