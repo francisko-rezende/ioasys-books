@@ -6,7 +6,7 @@ interface ButtonsProps extends React.ComponentProps<'button'> {
   buttonType: 'secondary' | 'success' | 'warning' | 'alert' | 'primary'
   size: 'tiny' | 'small' | 'basic' | 'large'
   disabled: boolean
-  children: ReactNode // ReactNode não funciona aqui
+  children: ReactNode // ReactNode não funciona aqui OU talvez funcione?
 }
 
 // export type ButtonsProps = {
