@@ -2,11 +2,15 @@ import styled, { css } from 'styled-components'
 
 export const Wrapper = styled.div`
   background-color: ${({ theme }) => theme.colors.white};
-  max-width: 272px;
+  width: 270px;
   border-radius: 4px;
   padding: 16px;
   display: flex;
   gap: 16px;
+
+  @media (max-width: 1160px) {
+    width: 288px;
+  }
 `
 export const BookInfoWrapper = styled.div`
   display: flex;
