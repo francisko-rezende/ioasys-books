@@ -6,10 +6,13 @@ module.exports = withPWA({
   swcMinify: true,
   experimental: {
     // Enables the styled-components SWC transform
-    styledComponents: true
+    styledComponents: true,
+  },
+  images: {
+    domains: ['d2drtqy2ezsot0.cloudfront.net'],
   },
   pwa: {
     dest: 'public',
-    disable: !isProd
-  }
+    disable: !isProd,
+  },
 })
