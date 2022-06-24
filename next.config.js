@@ -11,6 +11,7 @@ module.exports = withPWA({
   images: {
     domains: ['d2drtqy2ezsot0.cloudfront.net'],
   },
+  basePath: '/bookis',
   pwa: {
     dest: 'public',
     disable: !isProd,
