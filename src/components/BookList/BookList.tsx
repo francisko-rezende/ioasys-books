@@ -49,8 +49,6 @@ const BookList = () => {
   //   totalItems: 674,
   // }
 
-  console.log(booksData)
-
   React.useEffect(() => {
     const fetchData = async () => {
       const { data } = await api.get(`/books?page=${page}&amount=12`)
